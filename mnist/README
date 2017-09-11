@@ -1,0 +1,4 @@
+A simple convolutional neural net with around 98.8% accuracy on MNIST dataset
+
+# Uses convolutional layers, max pools, ReLUs, and fully connected layers
+# and trained with stochastic gradient descent
