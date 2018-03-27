@@ -52,7 +52,6 @@ def disp(img):
     plt.imshow(img.reshape(28, 28), cmap='Greys_r')
     plt.show()
 
-%matplotlib inline
 def train_loop():
     mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
     runs, z_holder, x_holder = setup()
