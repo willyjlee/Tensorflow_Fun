@@ -67,13 +67,6 @@ def train_loop():
             z_rand = np.random.uniform(-1.0, 1.0, size=[batch_size, noise_size])
             _, gen_loss, gen_out = sess.run(runs[2:], feed_dict={z_holder: z_rand})
 
-            if i % 100 == 0:
-                pass
-#                 print("disloss: {}".format(dis_loss))
-#                 print("genloss: {}".format(gen_loss))
-            if i % 500 == 0:
-                pass
-#                 print(gen_out)
             if i % 2500 == 0:
                 print("Iter: {}".format(i))
                 print("disloss: {}".format(dis_loss))
